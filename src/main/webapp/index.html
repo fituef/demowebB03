@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEF Graduation Project Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body{margin:0;font-family:Inter,Arial,sans-serif;color:#eaf1ff;background:radial-gradient(circle at top left,rgba(82,96,255,.25),transparent 25%),radial-gradient(circle at top right,rgba(168,85,247,.22),transparent 28%),linear-gradient(180deg,#040914,#091425)}
+        .wrap{max-width:1200px;margin:0 auto;padding:28px}
+        .nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
+        .brand{font-weight:800;font-size:20px}
+        .pill{display:inline-flex;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(111,124,255,.14);border:1px solid rgba(111,124,255,.24)}
+        .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding:48px 0}
+        .title{font-size:58px;line-height:1.04;font-weight:800;margin:18px 0}
+        .grad{background:linear-gradient(90deg,#d7ddff,#8ca1ff 45%,#c084fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+        .sub{color:#9cb0d1;font-size:18px;line-height:1.7;max-width:650px}
+        .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+        .btn{padding:14px 22px;border-radius:14px;text-decoration:none;font-weight:700}
+        .primary{color:#fff;background:linear-gradient(90deg,#6f7cff,#a855f7)}
+        .ghost{color:#eaf1ff;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03)}
+        .panel{background:rgba(11,22,40,.88);border:1px solid rgba(130,165,255,.16);border-radius:24px;box-shadow:0 20px 50px rgba(0,0,0,.35);padding:24px}
+        .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:24px}
+        .box{background:rgba(255,255,255,.04);padding:18px;border-radius:18px;border:1px solid rgba(255,255,255,.08)}
+        .box h3{margin:0;font-size:28px}.muted{color:#9cb0d1}
+        .links{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}.link{padding:16px 18px;border-radius:16px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);color:#eaf1ff;text-decoration:none}
+        @media(max-width:900px){.hero{grid-template-columns:1fr}.title{font-size:42px}.stats{grid-template-columns:repeat(2,1fr)}.links{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="nav">
+            <div class="brand">UEF Graduation Project</div>
+            <a class="btn ghost" href="topics">Open System</a>
+        </div>
+        <section class="hero">
+            <div>
+                <div class="pill">UEF graduation project dashboard</div>
+                <div class="title">Modern <span class="grad">dark-mode interface</span> for your UEF Java exam project.</div>
+                <div class="sub">Manage UEF graduation topics, lecturers, students, supervising assignments, and registrations in a cleaner and more futuristic UI inspired by modern SaaS landing pages.</div>
+                <div class="actions">
+                    <a class="btn primary" href="topics">Manage Topics</a>
+                    <a class="btn ghost" href="student-registrations/available">Student Registration</a>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="muted">System Overview</div>
+                <div class="stats">
+                    <div class="box"><h3>20+</h3><div class="muted">Topics</div></div>
+                    <div class="box"><h3>20+</h3><div class="muted">Lecturers</div></div>
+                    <div class="box"><h3>20+</h3><div class="muted">Students</div></div>
+                    <div class="box"><h3>Live</h3><div class="muted">CRUD</div></div>
+                </div>
+                <div class="links">
+                    <a class="link" href="lecturers">Lecturer Management →</a>
+                    <a class="link" href="students">Student Management →</a>
+                    <a class="link" href="assignments">Assignments →</a>
+                    <a class="link" href="registrations">Admin Registrations →</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
